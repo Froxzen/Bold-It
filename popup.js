@@ -6,13 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
             let isBoldEnabled = data.isBoldEnabled === true;
             isBoldEnabled = !isBoldEnabled;
             
-            // Update the state in storage
             chrome.storage.local.set({ isBoldEnabled });
-
-            // Send the updated state to the content script
             sendMessageToContentScript(isBoldEnabled);
-
-            // Update the button text
             updateButtonText(isBoldEnabled);
         });
     });

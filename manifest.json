@@ -1,21 +1,22 @@
 {
-    "manifest_version": 3,
-    "name": "Bold It!",
-    "version": "1.0",
-    "description": "An extension to bold the first half of words on a webpage.",
-    "permissions": [
-      "storage",
-      "activeTab",
-      "scripting"
-    ],
-    "action": {
-      "default_popup": "popup.html"
-    },
-    "content_scripts": [
-      {
-        "matches": ["<all_urls>"],
-        "exclude_matches": [],  
-        "js": ["content.js"]
-      }
-    ]
-  }
+	"manifest_version": 3,
+	"name": "Bold It!",
+	"version": "1.0",
+	"description": "An extension to bold the first half of words on a webpage.",
+	"permissions": ["storage", "activeTab", "scripting"],
+	"action": {
+		"default_popup": "popup.html"
+	},
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"exclude_matches": [],
+			"js": ["content.js"]
+		}
+	],
+	"icons": {
+		"16": "icons/icon16.png",
+		"48": "icons/icon48.png",
+		"128": "icons/icon128.png"
+	}
+}

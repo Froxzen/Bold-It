@@ -1,4 +1,3 @@
-
 let isProcessing = false;
 
 function boldFirstHalfOfWords() {
@@ -51,7 +50,6 @@ function restoreOriginalText() {
     isProcessing = false;
 }
 
-// Listen for messages from the popup
 chrome.runtime.onMessage.addListener((request) => {
     if (request.action === "enableBold") {
         boldFirstHalfOfWords();

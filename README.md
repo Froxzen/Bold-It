@@ -1,7 +1,7 @@
 # Bold It! - Chrome Extension
 
 ## Overview
-The **Word Half-Bolder** is a Chrome extension that dynamically bolds the first half of every word on all webpages, enhancing readability. Users have the option to disable the bolding feature when desired.
+**Bold It!** is a Chrome extension that dynamically bolds the first half of every word on all webpages, enhancing readability. Users have the option to disable the bolding feature when desired.
 
 ## Features
 - **Automatic Bolding**: Automatically bolds the first half of every word on every webpage you visit.
